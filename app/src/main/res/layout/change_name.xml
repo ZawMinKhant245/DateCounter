@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Change Name"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:id="@+id/etlChangeName"
+        android:hint="input name here"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etChangeName"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btcancel"
+            android:layout_toStartOf="@id/btokay"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="?colorError"
+            android:textColor="?colorOnError"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.button.MaterialButton>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:text="Okay"
+            android:id="@+id/btokay"
+            android:layout_alignParentEnd="true"
+            app:cornerRadius="8dp"
+            android:backgroundTint="?colorSecondary"
+            android:textColor="?colorOnError"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.button.MaterialButton>
+    </RelativeLayout>
+</LinearLayout>
